@@ -9,11 +9,11 @@ Internet - Because many use CDN and to make it easier to find solutions to all p
 ## How To Use (Python):
 ### Example Syntax:
 from data_formatting_helpers import format_currency, format_date
--- Format currency
+#### Format currency
 price = 1500.75
 formatted_price = format_currency(price, 'USD')
 print(formatted_price)  # Output: $1,500.75
--- Format date
+#### Format date
 date = '2024-03-07'
 formatted_date = format_date(date, 'yyyy-MM-dd')
 print(formatted_date)  # Output: 2024-03-07
