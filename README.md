@@ -1,4 +1,4 @@
-# data-formatter-teaproject
+# Data-Formatter-Teaproject
 This is a data formatter functions, built as a contribution to the Tea Project.
 Functions to format data such as numbers, dates, or currencies in various formats. 
 
