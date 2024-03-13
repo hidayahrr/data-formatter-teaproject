@@ -1,0 +1,17 @@
+from datetime import datetime
+
+def format_currency(number, currency):
+    return "{:,.2f} {}".format(number, currency)
+
+def format_date(date, date_format):
+    formatted_date = date.strftime(date_format)
+    return formatted_date
+
+# Example usage
+price = 1300.75
+formatted_price = format_currency(price, 'USD')
+print(formatted_price)  # Output: $1,300.75
+
+date_obj = datetime.strptime('2023-04-17', '%Y-%m-%d')
+formatted_date = format_date(date_obj, '%Y-%m-%d')
+print(formatted_date)  # Output: 2023-04-17
