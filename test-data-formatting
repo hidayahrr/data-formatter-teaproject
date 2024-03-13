@@ -1,0 +1,16 @@
+import unittest
+from datetime import datetime
+from your_module_name import format_currency, format_date
+
+class TestDataFormattingHelpers(unittest.TestCase):
+    def test_format_currency(self):
+        self.assertEqual(format_currency(1000, 'USD'), '$1,000.00')
+        self.assertEqual(format_currency(1500.50, 'EUR'), '€1,500.50')
+
+    def test_format_date(self):
+        date_obj = datetime.strptime('2024-03-07', '%Y-%m-%d')
+        self.assertEqual(format_date(date_obj, '%Y-%m-%d'), '2024-03-07')
+        self.assertEqual(format_date(date_obj, '%m/%d/%Y'), '03/07/2024')
+
+if __name__ == '__main__':
+    unittest.main()
